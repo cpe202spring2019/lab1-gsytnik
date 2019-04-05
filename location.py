@@ -6,6 +6,13 @@ class Location:
         self.name = name    # string for name of location
         self.lat = lat      # latitude in degrees (-90 to 90)
         self.lon = lon      # longitude in degrees (-180 to 180)
+        
+    def __repr__(self):
+        string = "Location('{0}', {1}, {2})"
+        return string.format(self.name, self.lat, self.lon)
+    
+    def __eq__(self, other):
+        return type(other) == type(self) and other.lon = self.lon and other.lat = self.lat
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 
