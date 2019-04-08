@@ -30,11 +30,12 @@ def bin_search(target, low, high, int_list):  # must use recursion
    If target is not found returns None. If list is None, raises ValueError """
    if int_list == None:
       raise ValueError("Must be a list")
+      middle = (low + high) / 2
    if low > high:
       return None
-   if int_list[low] == target:
-      return low
-   if int_list[high] == target:
-      return high
-   return bin_search(target, low + 1, high - 1, int_list)
+   if int_list[middle] > target:
+      return bin_search(target, low, middle - 1, int_list)
+   if int_list[middle] < target:
+      return bin_search(target, middle + 1, high, int_list)
+   return middle
 
