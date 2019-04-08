@@ -38,7 +38,3 @@ def bin_search(target, low, high, int_list):  # must use recursion
       return high
    return bin_search(target, low + 1, high - 1, int_list)
 
-   
-print(reverse_rec([1, 2, 3, 4, 5]))
-print(bin_search(7, 8, 1000, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-
