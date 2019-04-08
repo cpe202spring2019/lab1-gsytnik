@@ -20,7 +20,9 @@ def reverse_rec(int_list):   # must use recursion
    if int_list == None:
       raise ValueError("Must be a list")
    else:
-      pass
+      if len(int_list == 0):
+         return int_list
+      return reverse_rec(int_list[1:]) + int_list[0]
 
 def bin_search(target, low, high, int_list):  # must use recursion
    """searches for target in int_list[low..high] and returns index if found
