@@ -14,6 +14,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(loc2, loc)
         self.assertNotEqual(loc3, loc)
         self.assertNotEqual(loc2, loc3)
+        self.assertNotEqual(1, loc2)
     
     # Add more tests!
 
