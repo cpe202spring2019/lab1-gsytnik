@@ -30,7 +30,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(reverse_rec([1,2,3]),[3,2,1])
         self.assertEqual(reverse_rec([5,4,3,2,1]),[1,2,3,4,5])
         self.assertEqual(reverse_rec([0,0,0,0,1]),[1,0,0,0,0])
-        self.assertEqual(reverse_rec([]), [] )
+        self.assertEqual(reverse_rec([]), [])
 
     def test_bin_search(self):
         """tests binary search recursive loop"""
