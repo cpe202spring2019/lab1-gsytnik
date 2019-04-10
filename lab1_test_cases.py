@@ -20,7 +20,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(max_list_iter(t2), 20)
         self.assertEqual(max_list_iter(t3), -1)
         self.assertEqual(max_list_iter(t4), 3)
-        self.assertEqual(max_list_iter([1], 1)
+        self.assertEqual(max_list_iter([1]), 1)
 
     def test_reverse_rec(self):
         """tests a recursive loop which returns the reversed list."""

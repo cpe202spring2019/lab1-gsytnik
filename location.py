@@ -12,7 +12,7 @@ class Location:
         return string.format(self.name, self.lat, self.lon)
     
     def __eq__(self, other):
-        return type(other) == type(self) and other.lon = self.lon and other.lat = self.lat
+        return type(other) == type(self) and other.lon == self.lon and other.lat == self.lat
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 
