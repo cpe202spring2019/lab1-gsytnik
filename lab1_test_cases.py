@@ -24,6 +24,9 @@ class TestLab1(unittest.TestCase):
 
     def test_reverse_rec(self):
         """tests a recursive loop which returns the reversed list."""
+        tlist = None
+        with self.assertRaises(ValueError):  # used to check for exception
+            max_list_iter(tlist)
         self.assertEqual(reverse_rec([1,2,3]),[3,2,1])
         self.assertEqual(reverse_rec([5,4,3,2,1]),[1,2,3,4,5])
         self.assertEqual(reverse_rec([0,0,0,0,1]),[1,0,0,0,0])
@@ -31,6 +34,9 @@ class TestLab1(unittest.TestCase):
 
     def test_bin_search(self):
         """tests binary search recursive loop"""
+        tlist = None
+        with self.assertRaises(ValueError):  # used to check for exception
+            max_list_iter(tlist)
         list_val =[0,1,2,3,4,7,8,9,10]
         low = 0
         high = len(list_val)-1
